@@ -66,7 +66,7 @@ def run(input_path: Path, out: Path):
     report={**project_attention(items,today_limit=payload.get('today_limit',3)),'checkpoints':checkpoints(items)}
     out.mkdir(parents=True,exist_ok=True)
     (out/'attention.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
-    print(f'{len(items)} canonical work items → 3 attention views; project provenance preserved.')
+    print(f'{len(items)} canonical work items -> 3 attention views; project provenance preserved.')
     print(f'Output: {out/"attention.json"}')
     return report
 
