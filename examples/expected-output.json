@@ -1,0 +1,70 @@
+{
+  "views": {
+    "today": [
+      {
+        "id": "AN-01",
+        "project": "Analytics",
+        "title": "Verify cohort conversion",
+        "source": "repo://analytics/tests"
+      }
+    ],
+    "clarify": [
+      {
+        "id": "RG-02",
+        "project": "Registry",
+        "title": "Resolve conflicting company status",
+        "source": "repo://registry/evidence"
+      }
+    ],
+    "blocked": [
+      {
+        "id": "UI-03",
+        "project": "Workspace",
+        "title": "Complete installation acceptance",
+        "source": "repo://workspace/acceptance"
+      }
+    ]
+  },
+  "capacity": {
+    "today_limit": 3,
+    "selected": 1,
+    "over_limit": false
+  },
+  "checkpoints": [
+    {
+      "project": "Analytics",
+      "resume_from": [
+        {
+          "item_id": "AN-01",
+          "next_action": "Run cohort boundary tests",
+          "source": "repo://analytics/tests"
+        },
+        {
+          "item_id": "AN-04",
+          "next_action": "Confirm subscription conversion denominator",
+          "source": "repo://analytics/docs/metrics"
+        }
+      ]
+    },
+    {
+      "project": "Registry",
+      "resume_from": [
+        {
+          "item_id": "RG-02",
+          "next_action": "Compare publication dates of source records",
+          "source": "repo://registry/evidence"
+        }
+      ]
+    },
+    {
+      "project": "Workspace",
+      "resume_from": [
+        {
+          "item_id": "UI-03",
+          "next_action": "Resume installation after test tenant becomes available",
+          "source": "repo://workspace/acceptance"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "today_limit": 3,
+  "work_items": [
+    {"id":"AN-01","project":"Analytics","title":"Verify cohort conversion","workflow":"in_progress","attention":"today","source":"repo://analytics/tests","next_action":"Run cohort boundary tests"},
+    {"id":"RG-02","project":"Registry","title":"Resolve conflicting company status","workflow":"ready","attention":"clarify","source":"repo://registry/evidence","next_action":"Compare publication dates of source records"},
+    {"id":"UI-03","project":"Workspace","title":"Complete installation acceptance","workflow":"ready","attention":"blocked","source":"repo://workspace/acceptance","next_action":"Resume installation after test tenant becomes available","blocker":"Awaiting test tenant access"},
+    {"id":"AN-04","project":"Analytics","title":"Document metric definitions","workflow":"backlog","attention":"none","source":"repo://analytics/docs/metrics","next_action":"Confirm subscription conversion denominator"}
+  ]
+}
